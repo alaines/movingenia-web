@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string;
+  subtitle?: string;
+  align?: 'left' | 'center';
+}
+
+const { title, subtitle, align = 'center' } = Astro.props;
+---
+
+<div class={`section-header ${align === 'left' ? 'align-left' : ''}`}>
+  <h2 class="section-title">{title}</h2>
+  {subtitle && <div class="divider"></div>}
+  {subtitle && <p class="section-subtitle">{subtitle}</p>}
+</div>
+
+<style>
+  .section-header.align-left {
+    text-align: left;
+  }
+  
+  .section-header.align-left .divider {
+    margin: var(--space-md) 0;
+  }
+</style>

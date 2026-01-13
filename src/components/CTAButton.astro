@@ -1,0 +1,26 @@
+---
+interface Props {
+  href: string;
+  variant?: 'primary' | 'cta' | 'outline';
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { href, variant = 'primary', size = 'md' } = Astro.props;
+const sizeClass = size === 'lg' ? 'btn-lg' : size === 'sm' ? 'btn-sm' : '';
+---
+
+<a href={href} class={`btn btn-${variant} ${sizeClass}`}>
+  <slot />
+</a>
+
+<style>
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: var(--text-lg);
+  }
+  
+  .btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: var(--text-sm);
+  }
+</style>

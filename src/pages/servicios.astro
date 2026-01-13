@@ -1,0 +1,277 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+---
+
+<Layout 
+  title="Servicios" 
+  description="Soluciones integrales de Ingeniería ITS, Centros de Control, Datos, Software y Consultoría para movilidad urbana inteligente."
+>
+  <Hero 
+    title="Nuestros Servicios"
+    subtitle="Soluciones integrales para la gestión inteligente de la movilidad urbana"
+    height="medium"
+  />
+
+  <!-- Servicio 1: ITS y Semaforización -->
+  <section class="section">
+    <div class="container">
+      <div class="service-detail">
+        <div class="service-icon-large">🚦</div>
+        <h2>Ingeniería ITS y Semaforización</h2>
+        <p class="service-intro">
+          Diseñamos e integramos soluciones para la gestión semafórica y sistemas ITS, considerando tanto la infraestructura de campo como las plataformas de control.
+        </p>
+        
+        <ul class="feature-list">
+          <li>Arquitectura de redes semafóricas y comunicaciones</li>
+          <li>Integración y modernización de controladores</li>
+          <li>Monitoreo operativo y mejora del desempeño</li>
+          <li>Soporte a procesos de sincronización y planes semafóricos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicio 2: TMC -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <div class="service-detail">
+        <div class="service-icon-large">🎛️</div>
+        <h2>Centros de Control de Tránsito (TMC / CCGT)</h2>
+        <p class="service-intro">
+          Acompañamos el diseño e implementación de centros de control, asegurando que la tecnología responda a la operación real.
+        </p>
+        
+        <ul class="feature-list">
+          <li>Diseño de arquitectura tecnológica</li>
+          <li>Integración de videovigilancia, videowall y sistemas de incidencias</li>
+          <li>Definición de procedimientos operativos</li>
+          <li>Soporte a la continuidad y operación del centro de control</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicio 3: Datos y Analítica -->
+  <section class="section">
+    <div class="container">
+      <div class="service-detail">
+        <div class="service-icon-large">📊</div>
+        <h2>Datos y Analítica para Movilidad</h2>
+        <p class="service-intro">
+          Transformamos datos en información útil para la toma de decisiones.
+        </p>
+        
+        <ul class="feature-list">
+          <li>Integración de fuentes de datos de tránsito</li>
+          <li>Modelado geoespacial de activos e incidencias</li>
+          <li>Tableros operativos y métricas clave (KPIs)</li>
+          <li>Soporte a análisis y evaluación de desempeño</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicio 4: Software Operativo -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <div class="service-detail">
+        <div class="service-icon-large">💻</div>
+        <h2>Desarrollo de Software Operativo</h2>
+        <p class="service-intro">
+          Desarrollamos soluciones de software enfocadas en la operación diaria.
+        </p>
+        
+        <ul class="feature-list">
+          <li>APIs y plataformas de gestión</li>
+          <li>Módulos de incidencias y tickets</li>
+          <li>Sistemas de alertas e integraciones</li>
+          <li>Automatización de flujos de atención</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicio 5: Consultoría -->
+  <section class="section">
+    <div class="container">
+      <div class="service-detail">
+        <div class="service-icon-large">🎯</div>
+        <h2>Consultoría Técnica</h2>
+        <p class="service-intro">
+          Brindamos soporte especializado para la toma de decisiones técnicas.
+        </p>
+        
+        <ul class="feature-list">
+          <li>Diagnósticos y auditorías</li>
+          <li>Elaboración de especificaciones técnicas</li>
+          <li>Evaluación de riesgos tecnológicos</li>
+          <li>Planes de migración y mejora continua</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectores -->
+  <section class="section sectors-section">
+    <div class="container">
+      <SectionTitle 
+        title="Sectores que Atendemos"
+        subtitle="Trabajamos con entidades públicas y privadas"
+      />
+      
+      <div class="sectors-grid">
+        <div class="sector-detail-card">
+          <div class="sector-icon-large">🏛️</div>
+          <h3>Sector Público</h3>
+          <p>
+            Trabajamos con municipios y entidades responsables de la gestión del tránsito y la movilidad urbana, aportando soluciones alineadas a la normativa, los procesos administrativos y la operación real.
+          </p>
+          <div class="sector-examples">
+            <strong>Entidades:</strong>
+            <ul>
+              <li>Municipalidades</li>
+              <li>Ministerios de Transporte</li>
+              <li>Autoridades de Tránsito</li>
+              <li>Organismos de Planificación Urbana</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="sector-detail-card">
+          <div class="sector-icon-large">🏢</div>
+          <h3>Sector Privado</h3>
+          <p>
+            Apoyamos a concesionarios, operadores e instituciones privadas que enfrentan retos de movilidad dentro de su operación, integrando soluciones técnicas compatibles con el entorno urbano y los sistemas públicos existentes.
+          </p>
+          <div class="sector-examples">
+            <strong>Clientes:</strong>
+            <ul>
+              <li>Concesionarios viales</li>
+              <li>Operadores de transporte</li>
+              <li>Desarrolladores inmobiliarios</li>
+              <li>Empresas de logística</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .service-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .service-icon-large {
+    font-size: 5rem;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .service-detail h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .service-intro {
+    font-size: var(--text-xl);
+    line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: var(--space-xl);
+  }
+  
+  .service-detail .feature-list {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .sectors-section {
+    background: linear-gradient(to bottom, white, var(--color-background));
+  }
+  
+  .sectors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    margin-top: var(--space-2xl);
+  }
+  
+  .sector-detail-card {
+    background: white;
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    border: 2px solid var(--color-border);
+    transition: all var(--transition-base);
+  }
+  
+  .sector-detail-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-6px);
+  }
+  
+  .sector-icon-large {
+    font-size: 4rem;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .sector-detail-card h3 {
+    color: var(--color-primary);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-md);
+  }
+  
+  .sector-detail-card p {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .sector-examples {
+    background: var(--color-background);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    text-align: left;
+  }
+  
+  .sector-examples strong {
+    color: var(--color-primary);
+    font-size: var(--text-base);
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .sector-examples ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sector-examples li {
+    padding: var(--space-xs) 0;
+    padding-left: var(--space-md);
+    position: relative;
+    color: var(--color-text-secondary);
+  }
+  
+  .sector-examples li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .sectors-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

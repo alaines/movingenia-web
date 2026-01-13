@@ -1,0 +1,214 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<Layout 
+  title="Política de Privacidad" 
+  description="Política de privacidad y tratamiento de datos personales de MOVINGENIA."
+>
+  <Hero 
+    title="Política de Privacidad"
+    subtitle="Tratamiento de datos personales y privacidad"
+    height="small"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="legal-content">
+        <div class="legal-intro">
+          <p>
+            <strong>MOVINGENIA</strong> respeta la privacidad de los datos proporcionados a través de este sitio web.
+          </p>
+          <p>
+            La información recopilada es utilizada únicamente para fines de contacto y gestión comercial.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>1. Información que Recopilamos</h2>
+          <p>
+            A través del formulario de contacto, podemos recopilar la siguiente información:
+          </p>
+          <ul>
+            <li>Nombre completo</li>
+            <li>Dirección de correo electrónico</li>
+            <li>Número de teléfono (opcional)</li>
+            <li>Asunto y mensaje de consulta</li>
+          </ul>
+        </div>
+
+        <div class="legal-section">
+          <h2>2. Uso de la Información</h2>
+          <p>
+            La información proporcionada será utilizada exclusivamente para:
+          </p>
+          <ul>
+            <li>Responder a consultas y solicitudes de información</li>
+            <li>Comunicación relacionada con servicios solicitados</li>
+            <li>Envío de propuestas comerciales (únicamente si fue solicitado)</li>
+          </ul>
+          <p>
+            <strong>No compartimos, vendemos ni transferimos su información personal a terceros</strong> sin su consentimiento explícito, salvo cuando sea requerido por ley.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>3. Almacenamiento y Seguridad</h2>
+          <p>
+            Los datos proporcionados son almacenados de manera segura en bases de datos protegidas. Implementamos medidas técnicas y organizativas apropiadas para proteger la información contra acceso no autorizado, alteración, divulgación o destrucción.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>4. Cookies y Tecnologías de Rastreo</h2>
+          <p>
+            Este sitio web no utiliza cookies de terceros para rastreo publicitario. Únicamente se utilizan cookies técnicas esenciales para el funcionamiento básico del sitio.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>5. Derechos del Usuario</h2>
+          <p>
+            De acuerdo con la normativa de protección de datos personales, usted tiene derecho a:
+          </p>
+          <ul>
+            <li>Acceder a sus datos personales</li>
+            <li>Rectificar datos inexactos o incompletos</li>
+            <li>Solicitar la eliminación de sus datos</li>
+            <li>Oponerse al tratamiento de sus datos</li>
+            <li>Solicitar la portabilidad de sus datos</li>
+          </ul>
+          <p>
+            Para ejercer cualquiera de estos derechos, puede contactarnos a través de: <a href="mailto:contacto@movingenia.com">contacto@movingenia.com</a>
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>6. Enlaces a Terceros</h2>
+          <p>
+            Este sitio puede contener enlaces a sitios web de terceros. No nos hacemos responsables de las políticas de privacidad de dichos sitios. Recomendamos leer las políticas de privacidad de cada sitio que visite.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>7. Cambios en esta Política</h2>
+          <p>
+            MOVINGENIA se reserva el derecho de modificar esta política de privacidad en cualquier momento. Los cambios serán publicados en esta página con la fecha de última actualización.
+          </p>
+        </div>
+
+        <div class="legal-section">
+          <h2>8. Contacto</h2>
+          <p>
+            Si tiene preguntas sobre esta política de privacidad o sobre el tratamiento de sus datos personales, puede contactarnos:
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:contacto@movingenia.com">contacto@movingenia.com</a></li>
+            <li><strong>Teléfono:</strong> <a href="tel:+51963552850">+51 963 552 850</a></li>
+          </ul>
+        </div>
+
+        <div class="legal-footer">
+          <p><strong>Última actualización:</strong> Enero 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: var(--space-3xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .legal-intro {
+    background: var(--color-background);
+    padding: var(--space-xl);
+    border-radius: var(--radius-md);
+    border-left: 4px solid var(--color-primary);
+    margin-bottom: var(--space-3xl);
+  }
+  
+  .legal-intro p {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .legal-intro p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .legal-section {
+    margin-bottom: var(--space-3xl);
+  }
+  
+  .legal-section h2 {
+    color: var(--color-primary);
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-md);
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: var(--space-sm);
+  }
+  
+  .legal-section p {
+    font-size: var(--text-base);
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: var(--space-md);
+  }
+  
+  .legal-section ul {
+    margin-left: var(--space-xl);
+    margin-bottom: var(--space-md);
+  }
+  
+  .legal-section li {
+    margin-bottom: var(--space-xs);
+    line-height: 1.7;
+    color: var(--color-text);
+  }
+  
+  .legal-section a {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+  
+  .legal-section a:hover {
+    color: var(--color-primary-dark);
+  }
+  
+  .contact-list {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .legal-footer {
+    border-top: 2px solid var(--color-border);
+    padding-top: var(--space-lg);
+    margin-top: var(--space-3xl);
+    text-align: center;
+  }
+  
+  .legal-footer p {
+    color: var(--color-text-secondary);
+    font-size: var(--text-sm);
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .legal-content {
+      padding: var(--space-xl);
+    }
+  }
+</style>

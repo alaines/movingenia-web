@@ -1,0 +1,293 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<Layout 
+  title="Inicio" 
+  description="Ingeniería de Movilidad Inteligente para ciudades y organizaciones. Diseñamos, integramos y optimizamos soluciones tecnológicas para la gestión del tránsito."
+>
+  <!-- Hero Principal -->
+  <Hero 
+    title="Ingeniería de Movilidad Inteligente para ciudades y organizaciones"
+    subtitle="En MOVINGENIA diseñamos, integramos y optimizamos soluciones tecnológicas para la gestión del tránsito, combinando ingeniería, datos y software operativo para mejorar la movilidad urbana."
+    ctaText="Conversemos sobre tu proyecto"
+    ctaLink="/contacto"
+  />
+
+  <!-- Sección Intro -->
+  <section class="section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-content">
+          <h2>Quiénes Somos</h2>
+          <p>
+            Somos una empresa especializada en <strong>Ingeniería de Movilidad Inteligente (ITS)</strong> y transformación digital aplicada al tránsito.
+          </p>
+          <p>
+            Trabajamos en el diseño, implementación e integración de sistemas tecnológicos que permiten operar, monitorear y tomar decisiones sobre la movilidad de manera eficiente, trazable y sostenible.
+          </p>
+          <p>
+            Aunque MOVINGENIA es una empresa de reciente creación, está conformada por profesionales con amplia experiencia en proyectos reales de movilidad urbana, desarrollados desde entidades responsables de la planificación y gestión del tránsito en Lima Metropolitana.
+          </p>
+        </div>
+        
+        <!-- Bloque destacado -->
+        <div class="highlight-box">
+          <h3>Empresa nueva. Experiencia comprobada.</h3>
+          <p>
+            Nuestro equipo ha participado directamente en la formulación, gestión y operación de proyectos de movilidad urbana, semaforización centralizada y centros de control de tránsito, comprendiendo tanto la tecnología como los procesos normativos y operativos que los rodean.
+          </p>
+          <div class="experience-badges">
+            <span class="exp-badge">PROMOVILIDAD - MTC</span>
+            <span class="exp-badge">GMU - Lima</span>
+            <span class="exp-badge">PROTRÁNSITO</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preview Servicios -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <SectionTitle 
+        title="Nuestros Servicios" 
+        subtitle="Soluciones integrales para la movilidad inteligente"
+      />
+      
+      <div class="services-grid">
+        <ServiceCard 
+          title="Ingeniería ITS y Semaforización"
+          description="Diseñamos e integramos soluciones para la gestión semafórica y sistemas ITS, considerando tanto la infraestructura de campo como las plataformas de control."
+          icon="🚦"
+        />
+        
+        <ServiceCard 
+          title="Centros de Control (TMC)"
+          description="Acompañamos el diseño e implementación de centros de control, asegurando que la tecnología responda a la operación real."
+          icon="🎛️"
+        />
+        
+        <ServiceCard 
+          title="Datos y Analítica"
+          description="Transformamos datos en información útil para la toma de decisiones con integración de fuentes y modelado geoespacial."
+          icon="📊"
+        />
+        
+        <ServiceCard 
+          title="Desarrollo de Software"
+          description="Desarrollamos soluciones de software enfocadas en la operación diaria: APIs, gestión de incidencias y automatización."
+          icon="💻"
+        />
+        
+        <ServiceCard 
+          title="Consultoría Técnica"
+          description="Brindamos soporte especializado para la toma de decisiones técnicas con diagnósticos y evaluación de riesgos."
+          icon="🎯"
+        />
+      </div>
+      
+      <div class="text-center" style="margin-top: var(--space-xl);">
+        <CTAButton href="/servicios" variant="outline">
+          Ver todos los servicios
+        </CTAButton>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectores -->
+  <section class="section">
+    <div class="container">
+      <SectionTitle 
+        title="Sectores que Atendemos"
+      />
+      
+      <div class="sectors-grid">
+        <div class="sector-card">
+          <div class="sector-icon">🏛️</div>
+          <h3>Sector Público</h3>
+          <p>
+            Trabajamos con municipios y entidades responsables de la gestión del tránsito y la movilidad urbana, aportando soluciones alineadas a la normativa, los procesos administrativos y la operación real.
+          </p>
+        </div>
+        
+        <div class="sector-card">
+          <div class="sector-icon">🏢</div>
+          <h3>Sector Privado</h3>
+          <p>
+            Apoyamos a concesionarios, operadores e instituciones privadas que enfrentan retos de movilidad dentro de su operación, integrando soluciones técnicas compatibles con el entorno urbano y los sistemas públicos existentes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>¿Tienes un proyecto de movilidad?</h2>
+        <p>Conversemos sobre cómo podemos ayudarte a diseñar e implementar soluciones tecnológicas efectivas.</p>
+        <CTAButton href="/contacto" variant="cta" size="lg">
+          Contáctanos
+        </CTAButton>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+  
+  .intro-content h2 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .intro-content p {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    margin-bottom: var(--space-md);
+  }
+  
+  .highlight-box {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: white;
+    padding: var(--space-2xl);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 40px rgba(43, 91, 136, 0.15);
+  }
+  
+  .highlight-box h3 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-md);
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  .highlight-box p {
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.75;
+    margin-bottom: var(--space-lg);
+    font-weight: 400;
+  }
+  
+  .experience-badges {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+  
+  .exp-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .exp-badge:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+  }
+  
+  .sectors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+  }
+  
+  .sector-card {
+    background: white;
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  }
+  
+  .sector-card:hover {
+    border-color: rgba(43, 91, 136, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+  
+  .sector-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .sector-card h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  .sector-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.75;
+    font-weight: 400;
+  }
+  
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-content h2 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-lg);
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+  
+  .cta-content p {
+    font-size: var(--text-xl);
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 650px;
+    margin: 0 auto var(--space-xl);
+    line-height: 1.7;
+    font-weight: 400;
+  }
+    margin-bottom: var(--space-xl);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .intro-grid,
+    .sectors-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

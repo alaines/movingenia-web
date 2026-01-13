@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+---
+
+<Layout 
+  title="Nosotros" 
+  description="MOVINGENIA es una empresa de ingeniería orientada a la movilidad inteligente, con experiencia comprobada en proyectos de tránsito y semaforización."
+>
+  <Hero 
+    title="Nosotros"
+    subtitle="Experiencia real en movilidad urbana y tecnología aplicada al tránsito"
+    height="medium"
+  />
+
+  <!-- Quiénes somos -->
+  <section class="section">
+    <div class="container">
+      <SectionTitle 
+        title="Quiénes Somos"
+        align="left"
+      />
+      
+      <div class="content-block">
+        <p class="lead">
+          MOVINGENIA es una empresa de ingeniería orientada a la movilidad inteligente, creada para responder a los desafíos reales que enfrentan las ciudades y organizaciones en la gestión del tránsito.
+        </p>
+        
+        <h3>Nuestra propuesta combina:</h3>
+        <ul class="feature-list">
+          <li>Conocimiento técnico especializado</li>
+          <li>Experiencia operativa en el sector público</li>
+          <li>Desarrollo tecnológico aplicado a la toma de decisiones</li>
+        </ul>
+        
+        <p>
+          No diseñamos soluciones aisladas: trabajamos con una visión integral que considera la infraestructura, los sistemas, los datos y la operación diaria.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="section" style="background: white;">
+    <div class="container">
+      <SectionTitle 
+        title="Nuestra Experiencia"
+        subtitle="Trayectoria comprobada en entidades clave de movilidad urbana"
+      />
+      
+      <div class="experience-content">
+        <p class="intro-text">
+          El equipo de MOVINGENIA ha ocupado puestos técnicos y estratégicos en entidades directamente vinculadas a la movilidad urbana y la semaforización en Lima Metropolitana, entre ellas:
+        </p>
+        
+        <div class="institutions-grid">
+          <div class="institution-card">
+            <div class="inst-logo">🚀</div>
+            <h4>PROMOVILIDAD</h4>
+            <p>Ministerio de Transportes y Comunicaciones (MTC)</p>
+          </div>
+          
+          <div class="institution-card">
+            <div class="inst-logo">🏛️</div>
+            <h4>Gerencia de Movilidad Urbana</h4>
+            <p>Municipalidad Metropolitana de Lima</p>
+          </div>
+          
+          <div class="institution-card">
+            <div class="inst-logo">🚦</div>
+            <h4>PROTRÁNSITO</h4>
+            <p>Formulación de proyectos de semaforización centralizada inteligente</p>
+          </div>
+        </div>
+        
+        <div class="experience-highlight">
+          <p>
+            Esta experiencia nos permite entender cómo se conciben, evalúan, implementan y operan los proyectos de movilidad desde dentro, <strong>reduciendo riesgos y brechas entre el diseño y la realidad.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Misión y Visión -->
+  <section class="section">
+    <div class="container">
+      <div class="mission-vision-grid">
+        <div class="mv-card mission-card">
+          <div class="mv-icon">🎯</div>
+          <h3>Misión</h3>
+          <p>
+            Contribuir a una movilidad urbana más eficiente mediante el diseño e implementación de soluciones tecnológicas basadas en ingeniería, datos y operación real del tránsito.
+          </p>
+        </div>
+        
+        <div class="mv-card vision-card">
+          <div class="mv-icon">🔭</div>
+          <h3>Visión</h3>
+          <p>
+            Ser una referencia en ingeniería de movilidad inteligente en el Perú y la región, impulsando proyectos sostenibles, interoperables y orientados a la mejora continua de la ciudad.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .content-block {
+    max-width: 900px;
+  }
+  
+  .lead {
+    font-size: var(--text-xl);
+    font-weight: 500;
+    line-height: 1.7;
+    margin-bottom: var(--space-xl);
+    color: var(--color-text);
+  }
+  
+  .content-block h3 {
+    color: var(--color-primary);
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-md);
+  }
+  
+  .content-block p {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+  }
+  
+  .experience-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .intro-text {
+    font-size: var(--text-lg);
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+    color: var(--color-text-secondary);
+  }
+  
+  .institutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-2xl) 0;
+  }
+  
+  .institution-card {
+    background: var(--color-background);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 2px solid var(--color-border);
+    transition: all var(--transition-base);
+  }
+  
+  .institution-card:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .inst-logo {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+  }
+  
+  .institution-card h4 {
+    color: var(--color-primary);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .institution-card p {
+    color: var(--color-text-secondary);
+    font-size: var(--text-base);
+  }
+  
+  .experience-highlight {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: white;
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin-top: var(--space-2xl);
+  }
+  
+  .experience-highlight p {
+    font-size: var(--text-xl);
+    line-height: 1.7;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-xl);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .mv-card {
+    padding: var(--space-2xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    color: white;
+  }
+  
+  .mission-card {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary));
+  }
+  
+  .vision-card {
+    background: linear-gradient(135deg, var(--color-accent), #6FB85E);
+  }
+  
+  .mv-icon {
+    font-size: 3.5rem;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .mv-card h3 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-md);
+    color: white;
+  }
+  
+  .mv-card p {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  @media (max-width: 768px) {
+    .institutions-grid,
+    .mission-vision-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

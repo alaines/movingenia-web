@@ -1,0 +1,98 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import TeamMember from '../components/TeamMember.astro';
+---
+
+<Layout 
+  title="Equipo" 
+  description="Profesionales con formación en ingeniería y sistemas, con experiencia en gestión de proyectos de movilidad urbana."
+>
+  <Hero 
+    title="Nuestro Equipo"
+    subtitle="Profesionales con experiencia comprobada en movilidad urbana y gestión tecnológica"
+    height="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="intro-content">
+        <p class="intro-text">
+          Nuestro equipo está conformado por profesionales con formación en ingeniería y sistemas, y con experiencia directa en la gestión de proyectos de movilidad urbana y tránsito.
+        </p>
+        <p class="intro-text">
+          Combinamos conocimiento técnico, criterio operativo y comprensión institucional para desarrollar soluciones aplicables y sostenibles.
+        </p>
+      </div>
+
+      <SectionTitle 
+        title="Equipo"
+      />
+
+      <!-- Grid de equipo - Por ahora placeholder, en FASE 4 será dinámico -->
+      <div class="card-grid">
+        <TeamMember 
+          name="Equipo MOVINGENIA"
+          role="Ingenieros Especialistas en Movilidad"
+          bio="Profesionales con experiencia en PROMOVILIDAD, Gerencia de Movilidad Urbana de Lima y PROTRÁNSITO."
+        />
+        
+        <TeamMember 
+          name="Área Técnica"
+          role="Ingeniería ITS y Sistemas"
+          bio="Especialistas en diseño e integración de sistemas semafóricos, centros de control y arquitecturas tecnológicas."
+        />
+        
+        <TeamMember 
+          name="Área de Datos"
+          role="Analítica y Modelado"
+          bio="Expertos en integración de datos, modelado geoespacial y desarrollo de tableros operativos."
+        />
+      </div>
+
+      <div class="team-note">
+        <p>
+          <strong>Perfiles profesionales detallados disponibles bajo solicitud.</strong><br>
+          Por motivos de privacidad, no publicamos información personal del equipo en el sitio web público.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .intro-content {
+    max-width: 900px;
+    margin: 0 auto var(--space-2xl);
+    text-align: center;
+  }
+  
+  .intro-text {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+  }
+  
+  .team-note {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: white;
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    text-align: center;
+    margin-top: var(--space-3xl);
+  }
+  
+  .team-note p {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  .team-note strong {
+    color: white;
+    font-size: var(--text-xl);
+  }
+</style>

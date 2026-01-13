@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<Layout 
+  title="Proyectos" 
+  description="Portafolio de proyectos de movilidad urbana, semaforización centralizada, centros de control y análisis de datos."
+>
+  <Hero 
+    title="Proyectos"
+    subtitle="Experiencia en proyectos de movilidad urbana y gestión tecnológica del tránsito"
+    height="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="intro-content">
+        <p class="intro-text">
+          Participamos en proyectos vinculados a semaforización centralizada inteligente, centros de control de tránsito, integración de sistemas ITS y análisis y gestión de datos de movilidad.
+        </p>
+        <p class="intro-text">
+          Cada proyecto es abordado considerando su contexto operativo, institucional y tecnológico, priorizando soluciones sostenibles y escalables.
+        </p>
+      </div>
+
+      <SectionTitle 
+        title="Portafolio"
+        subtitle="(Los proyectos se presentan sin información sensible y con enfoque técnico)"
+      />
+
+      <!-- Grid de proyectos - Por ahora placeholder, en FASE 4 será dinámico -->
+      <div class="card-grid">
+        <ProjectCard 
+          title="Sistema de Semaforización Centralizada"
+          year="2023"
+          category="ITS"
+          description="Diseño e implementación de arquitectura de red semafórica con integración de controladores inteligentes y plataforma de gestión centralizada."
+          technologies={["NTCIP", "PostgreSQL", "APIs REST", "Redes IP"]}
+        />
+        
+        <ProjectCard 
+          title="Centro de Control de Tránsito"
+          year="2024"
+          category="TMC"
+          description="Desarrollo de centro de control con integración de videovigilancia, sistemas de incidencias y tableros operativos en tiempo real."
+          technologies={["Videowall", "GIS", "PostgreSQL", "Python"]}
+        />
+        
+        <ProjectCard 
+          title="Plataforma de Analítica de Movilidad"
+          year="2024"
+          category="Datos"
+          description="Sistema de integración de múltiples fuentes de datos de tránsito con modelado geoespacial y generación de KPIs operativos."
+          technologies={["PostgreSQL/PostGIS", "Python", "PowerBI", "APIs"]}
+        />
+      </div>
+
+      <div class="note-box">
+        <p>
+          <strong>Nota:</strong> Por motivos de confidencialidad, no se publican nombres de clientes ni información sensible de los proyectos. El enfoque está en las capacidades técnicas y metodologías aplicadas.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .intro-content {
+    max-width: 900px;
+    margin: 0 auto var(--space-3xl);
+    text-align: center;
+  }
+  
+  .intro-text {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-md);
+  }
+  
+  .note-box {
+    background: var(--color-background);
+    border-left: 4px solid var(--color-primary);
+    padding: var(--space-lg);
+    border-radius: var(--radius-md);
+    margin-top: var(--space-2xl);
+  }
+  
+  .note-box p {
+    color: var(--color-text-secondary);
+    margin: 0;
+    font-size: var(--text-base);
+  }
+  
+  .note-box strong {
+    color: var(--color-primary);
+  }
+</style>

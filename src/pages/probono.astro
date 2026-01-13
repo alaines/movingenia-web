@@ -1,0 +1,217 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/Hero.astro';
+import SectionTitle from '../components/SectionTitle.astro';
+import CTAButton from '../components/CTAButton.astro';
+---
+
+<Layout 
+  title="Pro Bono e Impacto" 
+  description="Iniciativas de impacto social orientadas a la mejora de la movilidad, seguridad vial y acceso equitativo al espacio urbano."
+>
+  <Hero 
+    title="Pro Bono e Impacto Social"
+    subtitle="Tecnología al servicio de la movilidad sostenible y equitativa"
+    height="medium"
+  />
+
+  <section class="section">
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="intro-block">
+          <p class="lead">
+            Creemos que la tecnología también debe generar impacto positivo.
+          </p>
+          <p>
+            Por ello, MOVINGENIA evalúa y participa en iniciativas orientadas a la mejora de la movilidad, la seguridad vial y el acceso equitativo al espacio urbano.
+          </p>
+        </div>
+
+        <SectionTitle 
+          title="Áreas de Impacto"
+          align="left"
+        />
+
+        <div class="impact-areas">
+          <div class="impact-card">
+            <div class="impact-icon">🚶</div>
+            <h3>Seguridad Vial</h3>
+            <p>
+              Apoyamos iniciativas que utilizan datos y tecnología para reducir siniestros viales y mejorar la seguridad de peatones, ciclistas y usuarios vulnerables.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon">♿</div>
+            <h3>Movilidad Inclusiva</h3>
+            <p>
+              Promovemos soluciones que garanticen el acceso equitativo al transporte y al espacio urbano, considerando las necesidades de todas las personas.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon">🌱</div>
+            <h3>Sostenibilidad Urbana</h3>
+            <p>
+              Participamos en proyectos que buscan reducir la congestión, las emisiones y el impacto ambiental del tránsito vehicular.
+            </p>
+          </div>
+
+          <div class="impact-card">
+            <div class="impact-icon">📚</div>
+            <h3>Educación y Conocimiento</h3>
+            <p>
+              Compartimos conocimiento técnico mediante talleres, publicaciones y colaboraciones con universidades e instituciones académicas.
+            </p>
+          </div>
+        </div>
+
+        <div class="collaboration-section">
+          <SectionTitle 
+            title="Colaboración Pro Bono"
+            subtitle="Evaluamos proyectos de impacto social caso por caso"
+          />
+
+          <div class="criteria-box">
+            <h4>Criterios de evaluación:</h4>
+            <ul class="feature-list">
+              <li>Impacto medible en seguridad vial o movilidad sostenible</li>
+              <li>Beneficio directo a comunidades vulnerables o de escasos recursos</li>
+              <li>Capacidad de escalamiento y sostenibilidad del proyecto</li>
+              <li>Alineación con principios de movilidad equitativa y accesible</li>
+              <li>Transparencia en el uso de recursos y resultados</li>
+            </ul>
+          </div>
+
+          <p class="note-text">
+            Si tienes un proyecto de impacto social relacionado con movilidad urbana y crees que podemos colaborar, contáctanos para evaluar posibilidades de apoyo técnico.
+          </p>
+        </div>
+
+        <div class="cta-box">
+          <h3>¿Tienes una iniciativa de impacto social?</h3>
+          <p>Cuéntanos sobre tu proyecto y evaluemos cómo podemos colaborar.</p>
+          <CTAButton href="/contacto" variant="cta" size="lg">
+            Proponer proyecto
+          </CTAButton>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .intro-block {
+    margin-bottom: var(--space-3xl);
+  }
+  
+  .lead {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-lg);
+    line-height: 1.4;
+  }
+  
+  .intro-block p {
+    font-size: var(--text-lg);
+    line-height: 1.8;
+    color: var(--color-text-secondary);
+  }
+  
+  .impact-areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--space-lg);
+    margin: var(--space-2xl) 0 var(--space-3xl);
+  }
+  
+  .impact-card {
+    background: white;
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--color-border);
+    text-align: center;
+    transition: all var(--transition-base);
+  }
+  
+  .impact-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-4px);
+  }
+  
+  .impact-icon {
+    font-size: 3rem;
+    margin-bottom: var(--space-md);
+  }
+  
+  .impact-card h3 {
+    color: var(--color-primary);
+    font-size: var(--text-xl);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .impact-card p {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    font-size: var(--text-base);
+  }
+  
+  .collaboration-section {
+    margin: var(--space-3xl) 0;
+  }
+  
+  .criteria-box {
+    background: var(--color-background);
+    padding: var(--space-xl);
+    border-radius: var(--radius-lg);
+    border-left: 4px solid var(--color-accent);
+    margin: var(--space-xl) 0;
+  }
+  
+  .criteria-box h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+  }
+  
+  .note-text {
+    font-size: var(--text-lg);
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin-top: var(--space-xl);
+  }
+  
+  .cta-box {
+    background: linear-gradient(135deg, var(--color-accent), #6FB85E);
+    color: white;
+    padding: var(--space-3xl);
+    border-radius: var(--radius-xl);
+    text-align: center;
+    margin-top: var(--space-3xl);
+  }
+  
+  .cta-box h3 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-md);
+    color: white;
+  }
+  
+  .cta-box p {
+    font-size: var(--text-xl);
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: var(--space-xl);
+  }
+  
+  @media (max-width: 768px) {
+    .impact-areas {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
